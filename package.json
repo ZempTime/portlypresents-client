@@ -8,7 +8,8 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^4.0.0",
-    "react-router-dom": "^4.0.0"
+    "react-router-dom": "^4.0.0",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
@@ -17,6 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
